@@ -1,0 +1,8 @@
+{
+  "name": "storybook-sample",
+  "packageManager": "yarn@1.22.19",
+  "volta": {
+    "node": "18.12.1",
+    "yarn": "1.22.19"
+  }
+}
