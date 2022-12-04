@@ -22,6 +22,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@rollup/plugin-typescript": "^10.0.1",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
@@ -31,6 +34,10 @@
     "@storybook/manager-webpack4": "^6.5.14",
     "@storybook/react": "^6.5.14",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "12.1.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.3",
     "@types/react": "16.14.0",
     "@types/react-dom": "^16.9.17",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -42,6 +49,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-storybook": "^0.6.7",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "rollup": "^3.5.1",
     "rollup-plugin-dts": "^5.0.0",
     "typescript": "^4.9.3"
@@ -49,6 +58,7 @@
   "scripts": {
     "storybook": "NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup --config rollup.config.js --configPlugin typescript"
+    "build": "rollup --config rollup.config.js --configPlugin typescript",
+    "test": "jest"
   }
 }
